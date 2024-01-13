@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+body .search .searchBar {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 166, 0);
+}
+
+body .search {
+  display: flex;
+}
+
+body .search input {
+  border: none;
+  padding: 0px;
+  font-size: larger;
+  width: 0px;
+  display: block;
+  transition: width 0.45s linear;
+  height: 40px;
+  outline: none;
+}
+
+body .search input.active {
+  padding: 5px;
+  width: 250px;
+  transition: width 0.45s linear;
+}
